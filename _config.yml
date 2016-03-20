@@ -24,5 +24,5 @@ markdown: kramdown
 permalink: pretty
 
 # Exclude Files
-exclude: ["README.md", ".gitignore", "Gemfile", "Gemfile.lock", ".travis.yml"]
+exclude: ["README.md", ".gitignore", "Gemfile", "Gemfile.lock", "vendor", ".travis.yml"]
 
