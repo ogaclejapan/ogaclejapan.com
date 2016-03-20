@@ -14,6 +14,7 @@ deploy:
   secret_access_key:
     secure: Ezloj9tTo/bOcnmnz/sIxxJqt5tGWdOhgy9upTpnxdx7DiCSB+DiU7rR8XbFQAyenykYIMOqEj+0/bovxxTpCS+uuqOaj2b9lmbzsQ5xf8Zdsbp0PXmZp9Y2anmJeaBN6vZPRKTj9xYx+1t6iCC+PoI+r3HqZ4SPmnhRKn9AdIyJpE5fX+RZufpNRXG1+0BwZWhSQJ9qwO1Ad7LQrLxmjr9LLtyKboQMrcn/WlFH947skrR3mKPUOiT2ELkmG7dGxGnO87S23g1+TfyTyjON0RYoo1If8HFdTyZnvCXXkUiLe16alb9pLUxCJ08rYPnpLorAyUOS/o/Rig+2fz5eIBOnYYp7KzKlp5sQxtK1LG8QcSRdjmbDrIPy8M5GlweAglw904OXPQ5ZhPRDmAeQBEYJrc51fJsfBqOpn61t+dBaAWrFFutnTwSLvxNIpzvlVmFq1EIGMIV/VbibuYVBGiJTOooF5uxk6qtXou/Jkrmg2egBbFYbHDdzHkyMF/8nuYeLuwYPITv7eluxMb+4IuZj6x91unzpjV2gfzUtBKiR8aEX1Q6IM76hPlrk1/Mo0p0SdoveXBqdiKbtl+RdPk+XUeqwYMZBlzBDo4EqwfItgnFhyc8+pUnUgK0odMADLhgl5xkGsLVYXSuvX8tZCWkQiqzYZPfHQ+HE5r27SZs=
   bucket: ogaclejapan.com
+  skip_cleanup: true
   local-dir: _site
   acl: public-read
   on:
