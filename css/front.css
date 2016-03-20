@@ -39,7 +39,6 @@ h3 {
 .content {
     padding-top: 100px;
     padding-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 ul {
@@ -74,6 +73,9 @@ a:hover {
 }
 
 @media (max-width: 450px) {
+h1 {
+    font-size: 3em;
+}
 ul {
     text-align: center;
 }

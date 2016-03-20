@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+- 2.3.0
+script: bundle exec jekyll build
+branches:
+  only:
+  - master
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+deploy:
+  provider: gcs
+  access_key_id: GOOGXR2JCXMJPZWXJ6WR
+  secret_access_key:
+    secure: ugxjQHBcul4lh4faYcag/x/tmSggIxShVjklFcMQGm5R1Sbbz4UPb9daW2kLPdZ6bDQdJr2qMfkbneLor0qnSUwvid7+uEPiVY2YZQRpDJaoQEs3hddX8S4CItfBJ4mAnATSUsTpaEbSeJkMVarNhuNlwVa4J360IK/VhMzLVXDMqwKB9aGs5gC+XSHHb0IiSHLXU8SYYN5EveSwDruou+zGrf6eVYn4jZbZNskIZDsbIYdPOK9VQMz/dLP4TIiBieYoZ5iDJ6hlAmhZIKP6R2N2+ew4lYDQYNL1IVeKmQdBXBp1bGh2XkY6oz4E4U1iCxW0QDlkOqX1ENjdLYvtLGmWw49HymFYNOvLm3XpAKPWQhlzIUong/MjfD0efryPDzKF5ofuoUF7X6Ssm9pF8qe4LWpVDVvwfhE9Z+MpQSWPKPV0JYm2wFTuN1rij2LshHZEXsIgmvjqCnjCLZQVYpVWsF+/QNXgIdiZ8l+42Op05OQsJ8N5ok3SMP+cxOU3UsoSo0x5U9fKoSjxjV5Xu7KVO5RQG++9loNjJDJ4ajRmmg4kWC+cwFRyYEdu95ZITlFT/zlafHm+Q5o1ZfUpjnuDHFMfLRduRIYT22B1OB3RzEA7LA6a10HqRgBwNo6oPISwLqs5j2EZiQn9AFX602Rz8HbdoJKo05ChsTsez1I=
+  bucket: ogaclejapan.com
+  local-dir: _site
+  skip_cleanup: false
+  acl: public-read
+  detect_encoding: true
+  on:
+    repo: ogaclejapan/ogaclejapan.com
+    all_branches: true

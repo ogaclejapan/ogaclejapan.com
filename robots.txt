@@ -1,0 +1,9 @@
+---
+layout: null
+title : robots.txt
+---
+
+User-agent: *
+
+Sitemap: {{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}
+
