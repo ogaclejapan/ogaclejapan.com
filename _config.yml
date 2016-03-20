@@ -2,6 +2,8 @@
 name: ogaclejapan
 description: "Android Software Engineer at AbemaTV"
 url: "http://ogaclejapan.com"
+lang: ja
+timezone: Asia/Tokyo
 
 
 # Delete the lines you don't need
